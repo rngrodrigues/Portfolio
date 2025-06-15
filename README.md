@@ -33,8 +33,8 @@ Um dos focos desse projeto foi melhorar minhas habilidades e fixar conceitos, en
  # 📁 Estrutura
 
 /assets  
-  /img           -> Imagens do projeto (ex: projetos e imagem inicial)  
-  /css           -> Arquivos de estilo (reset e principais estilos)
+  /img           -> Imagens do projeto (projetos, imagem inicial...)  
+  /css           -> Arquivos de estilo (reset e styles)
 
 /js              -> Scripts JavaScript do site  
 /README.md       -> Documentação do projeto  
