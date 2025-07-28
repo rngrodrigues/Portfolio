@@ -1,6 +1,10 @@
+# 💻 Deploy
+
+--
+
 # 🧑‍💻 Portfólio Pessoal
 
- Este é o repositório do meu portfólio pessoal. Um projeto web responsivo e organizado onde apresento meus projetos, habilidades, experiências e formas de contato.
+Um projeto web responsivo e organizado onde apresento meus projetos, habilidades, experiências e formas de contato.
 
 # 🔍 Sobre o projeto
 
@@ -48,10 +52,6 @@ Um dos focos desse projeto foi melhorar minhas habilidades e fixar conceitos, en
 
 ![Home Mobile](https://github.com/rngrodrigues/portfolio/blob/main/assets/img/home-mobile.png?raw=true) 
 
-
-# 💻 Deploy
-
---
 
 # 📬 Contato
 
