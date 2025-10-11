@@ -7,14 +7,14 @@
 
 body {
     background-color: white;
-    background-image: url('https://transparenttextures.com/patterns/absurdity.png');
+    background-image: url('https://transparenttextures.com/patterns/brushed-alum.png');
     font-family: 'Inter', sans-serif;
     color: black;
     transition: background-color 0.5s, color 0.5s;
 }
 
 .modo-escuro {
-    background: black;
+    background: rgb(0, 0, 15);
     background-image: url('https://transparenttextures.com/patterns/dark-denim-3.png');
     color: white;
 }
@@ -94,7 +94,7 @@ header {
 }
 
 .scrolled-escuro {
-    background: rgba(17, 17, 17, 0.9);
+    background: rgba(0, 0, 20, 0.9);
     backdrop-filter: blur(0.3rem);
     color: white;
     transition: background-color 0.5s ease, padding 0.5s ease-out;
@@ -177,7 +177,7 @@ header {
     }
 
     .menu-items-escuro {
-        background: rgba(17, 17, 17, 0.9);
+        background: rgba(0, 0, 20, 0.9);
 
     }
 
@@ -403,7 +403,7 @@ header {
 }
 
 #habilidades .card-hab-escuro {
-    background-color: #111111;
+    background-color: rgb(0, 0, 20);
 }
 
 @media (max-width:1100px) {
@@ -557,7 +557,7 @@ padding: 1rem;
 }
 
 .texto-grid-noturno {
-    background-color: rgba(17, 17, 17, 0.9);
+    background-color: rgba(0, 0, 20, 0.9);
     backdrop-filter: blur(0.3rem);
 }
 
@@ -708,7 +708,7 @@ padding: 1rem;
 }
 
 .time-line-content-noturno {
-    background-color: #111111;
+    background-color: rgb(0, 0, 20);
 }
 
 .time-line-content h2 {
@@ -783,7 +783,7 @@ time {
 }
 
 #sobre.sobre-noturno {
-    background-color: black;
+    background-color: rgb(0, 0, 20);
 }
 
 .titulo-sobre {
@@ -953,7 +953,7 @@ form button {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(0, 0, 15);
     background-image: url('https://transparenttextures.com/patterns/fabric-of-squares.png');
 }
 
