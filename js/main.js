@@ -1,10 +1,24 @@
-function alterarTema() {
     const body = document.body;
     const menu = document.getElementById("menu");
     const projetos = document.getElementById("projetos"); 
     const sobre = document.getElementById("sobre");
     const button = document.getElementById('toggleTheme'); 
     const icon = button.querySelector('.icon'); 
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const temaSalvo = localStorage.getItem("tema");
+
+  if (temaSalvo === "escuro") {
+    alterarTema();
+  } else if (!temaSalvo) {
+    // se não houver tema salvo, usa o do sistema
+    const prefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefereEscuro) alterarTema();
+  }
+});
+
+function alterarTema() {
+   
 
     // Alterna o tema
     body.classList.toggle("modo-escuro");
@@ -32,6 +46,10 @@ function alterarTema() {
     // Alterna as classes da timeline
     document.querySelectorAll(".time-line-content").forEach(el => {
         el.classList.toggle("time-line-content-noturno");
+    });
+    // Alterna as classes do modal
+     document.querySelectorAll(".modal-content, modal-content2, modal-content3").forEach(el => {
+        el.classList.toggle("dark-modal");
     });
 
     // Alterna as classes das seções de projetos e sobre

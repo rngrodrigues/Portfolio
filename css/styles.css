@@ -440,7 +440,11 @@ header {
     font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 cursor: pointer;
 }
-#modal-habilidades {
+#modal-habilidades .dark-modal, #modal-habilidades2 .dark-modal, #modal-habilidades3 .dark-modal  {
+    background: black;
+    color: white;
+}
+#modal-habilidades, #modal-habilidades2, #modal-habilidades3{
     display: none;
     position: fixed;
     z-index: 2;
@@ -449,11 +453,10 @@ cursor: pointer;
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
 }
 .modal-content {
-    color: black;
-    background-color: #fff;
+    background-color: whitesmoke;
     margin:15rem auto;
     padding: 3rem;
     border: 1px solid #888;
@@ -461,48 +464,7 @@ cursor: pointer;
    width: 30%;
    display: block;
 }
-#modal-habilidades2 {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-.modal-content2 {
-    color: black;
-    background-color: #fff;
-    margin:15rem auto;
-    padding: 3rem;
-    border: 1px solid #888;
-    border-radius: 1rem;
-   width: 30%;
-   display: block;
-}
-#modal-habilidades3 {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-.modal-content3 {
-    color: black;
-    background-color: #fff;
-    margin:15rem auto;
-    padding: 3rem;
-    border: 1px solid #888;
-    border-radius: 1rem;
-   width: 30%;
-   display: block;
-}
+
 @media (max-width:1366px) {
 .modal-content {
  width: 70%;
