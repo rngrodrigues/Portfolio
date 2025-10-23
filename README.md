@@ -57,7 +57,7 @@ Um dos focos desse projeto foi melhorar minhas habilidades e fixar conceitos, en
 
 Você pode entrar em contato comigo por:
 
-* Email: renanrodriguesdev@gmail.com
+* Email: devrenanrodrigues@gmail.com
 * LinkedIn: https://www.linkedin.com/in/rodrigues0/
 * Whatsapp: (+55) 21 97633-3733
 
