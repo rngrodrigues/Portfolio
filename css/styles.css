@@ -441,7 +441,7 @@ header {
 cursor: pointer;
 }
 #modal-habilidades .dark-modal, #modal-habilidades2 .dark-modal, #modal-habilidades3 .dark-modal  {
-    background: black;
+    background: rgb(0, 0, 15);
     color: white;
 }
 #modal-habilidades, #modal-habilidades2, #modal-habilidades3{
