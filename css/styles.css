@@ -440,12 +440,17 @@ header {
     font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 cursor: pointer;
 }
-#modal-habilidades .dark-modal, #modal-habilidades2 .dark-modal, #modal-habilidades3 .dark-modal  {
+#modal-habilidades .dark-modal,
+ #modal-habilidades2 .dark-modal,
+  #modal-habilidades3 .dark-modal  {
     background: rgb(0, 0, 15);
     color: white;
 }
-#modal-habilidades, #modal-habilidades2, #modal-habilidades3{
-    display: none;
+#modal-habilidades,
+ #modal-habilidades2,
+ #modal-habilidades3{
+    opacity: 0;
+  visibility: hidden;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -454,16 +459,33 @@ cursor: pointer;
     height: 100vh;
     overflow: auto;
     background-color: rgba(0,0,0,0.8);
+     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    pointer-events: none;
+    
+}
+#modal-habilidades.show,
+#modal-habilidades2.show,
+#modal-habilidades3.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 .modal-content {
     background-color: whitesmoke;
     margin:15rem auto;
     padding: 3rem;
-    border: 1px solid #888;
-    border-radius: 1rem;
+    border-radius: 5rem;
    width: 30%;
    display: block;
+    box-shadow: 0 0 0.8rem gray;
 }
+.close-modal {
+    float: right;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--cor-azul);
+  }
+  
 
 @media (max-width:1366px) {
 .modal-content {
@@ -504,39 +526,6 @@ cursor: pointer;
 }
 }
 
-
-.close-modal {
-    color: #aaa;
-    float: right;
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: var(--cor-azul);
-  }
-  .close-modal2 {
-    color: #aaa;
-    float: right;
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: var(--cor-azul);
-  }
-  .close-modal3 {
-    color: #aaa;
-    float: right;
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: var(--cor-azul);
-  }
-  .btn-close-modal {
-    text-align: center;
-    max-width: 100%;
-    margin: 1rem;
-    font-size: clamp(1.5rem, 2.5vw, 1.7rem);
-    border-radius: 0.4rem;
-    color: white;
-    background-color: var(--cor-azul);
-    padding: 0.5rem;
-  }
-
   .close:hover,
   .close:focus {
     color: black;
@@ -550,7 +539,6 @@ cursor: pointer;
   font-size: clamp(2rem, 2.5vw, 4rem);
   padding: 1rem;
   width: 100%;
-  text-align: center;
 }
 .modal-content p,
 .modal-content2 p,

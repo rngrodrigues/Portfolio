@@ -111,11 +111,25 @@ document.querySelector(".div-icons-lang .wrapper").appendChild(segundaLista);
 
 const modais = document.querySelectorAll('#modal-habilidades, #modal-habilidades2, #modal-habilidades3');
 
-modais.forEach((modal) => {
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-    }
+
+document.querySelectorAll('.link-modal').forEach(link => {
+  link.addEventListener('click', () => {
+    const modal = document.getElementById(link.dataset.modal);
+    if (modal) modal.classList.add('show');
   });
 });
 
+document.querySelectorAll('.close-modal').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('[id^="modal-habilidades"]');
+    if (modal) modal.classList.remove('show');
+  });
+});
+
+modais.forEach((modal) => {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('show');
+    }
+  });
+});
