@@ -211,7 +211,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 6rem;
-    height: 35vh;
+    height: 35rem;
 
 }
 
@@ -245,7 +245,7 @@ header {
 }
 
 #texto-inicio h1 {
-    font-size: clamp(2rem, 12vw, 9rem);
+    font-size: clamp(2rem, 12vw, 8rem);
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
