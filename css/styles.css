@@ -1071,6 +1071,7 @@ footer section {
 .direitos-reservados {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: clamp(1rem, 2vw, 1.5rem);
     color: white;
     padding-bottom: 1rem;
